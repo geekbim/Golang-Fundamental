@@ -20,5 +20,15 @@ func main() {
 	user.Email = "manyuabim9@gmail.com"
 	user.IsActive = true
 
+	user2 := User{}
+	user2.ID = 2
+	user2.FirstName = "Dhanu"
+	user2.LastName = "Ejas"
+	user2.Email = "dhanuejas@gmail.com"
+	user2.IsActive = true
+
 	fmt.Println(user)
+	fmt.Println(user2)
+	fmt.Println(user.FirstName)
+	fmt.Println(user2.LastName)
 }
