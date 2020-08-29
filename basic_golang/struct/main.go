@@ -19,6 +19,15 @@ type Group struct {
 	IsAvailable bool
 }
 
+func (user User) display() string {
+
+}
+
+func DisplayName(user User) string {
+	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.Email)
+	return result
+}
+
 func main() {
 	user := User{}
 	user.ID = 1
@@ -63,7 +72,7 @@ func DisplayGroup(group Group) {
 	}
 }
 
-func DisplayName(user User) string {
-	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.Email)
-	return result
-}
+// func DisplayName(user User) string {
+// 	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.Email)
+// 	return result
+// }
