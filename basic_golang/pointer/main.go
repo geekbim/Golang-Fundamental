@@ -5,14 +5,26 @@ import (
 )
 
 func main() {
-	numberA := 5
-	numberB := &numberA
+	// numberA := 5
+	// numberB := &numberA
+
+	// fmt.Println(numberA)
+	// fmt.Println(numberB)
+	// fmt.Println(*numberB)
+
+	// *numberB = 10
+	// fmt.Println(numberA)
+	// fmt.Println(*numberB)
+
+	var numberA int = 5
+	var numberB *int = &numberA
 
 	fmt.Println(numberA)
 	fmt.Println(numberB)
 	fmt.Println(*numberB)
 
-	*numberB = 10
+	numberA = 20
 	fmt.Println(numberA)
+	fmt.Println(numberB)
 	fmt.Println(*numberB)
 }
